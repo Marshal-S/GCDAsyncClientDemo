@@ -32,7 +32,7 @@
     
     NSError *error;
     //开启接收服务器，改成连接的服务器的ip地址，如果是在自己电脑开启的server，那就是自己电脑的ip地址
-    [self.socket connectToHost:@"172.26.105.76" onPort:8040 withTimeout:-1 error:&error];
+    [self.socket connectToHost:@"192.168.1.1" onPort:8040 withTimeout:-1 error:&error];
     if (error) {
         NSLog(@"连接服务器失败:%@",error.localizedDescription);
     }
